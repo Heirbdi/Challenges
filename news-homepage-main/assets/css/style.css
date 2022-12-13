@@ -1,0 +1,301 @@
+.hero .img_left, .hero .left_content, .hero .left_content h1, .hero .right_top {
+  margin-bottom: 1rem;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Intern";
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Intern";
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-weight: bold;
+}
+body {
+  width: 100%;
+  font-family: "Intern";
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: rgb(135, 132, 140);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header .nav_list, header .close {
+  display: none;
+}
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .desktop {
+  display: none;
+}
+.hero .left_content h1 {
+  font-family: "Intern";
+  font-weight: bold;
+  font-size: 3rem;
+  color: #00001a;
+}
+.hero .buttons {
+  padding: 0.75rem 0rem 1rem 0rem;
+  margin-bottom: 4rem;
+}
+.hero a.btn {
+  padding: 0.75rem 1.7rem;
+  background: #f15d51;
+  color: #e9eaec;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hero a.btn:hover {
+  background: #00001a;
+}
+.hero .bright {
+  margin-bottom: 2rem;
+}
+.hero .right_top {
+  background: #00001a;
+  padding: 1rem;
+}
+.hero .right_top .new_one {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid rgb(135, 132, 140);
+}
+.hero .right_top .new_two {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid rgb(135, 132, 140);
+}
+.hero .right_top .new_tree {
+  margin-top: 1.5rem;
+}
+.hero .right_top .new_tree p {
+  margin-bottom: 0;
+}
+.hero .right_top h3 {
+  color: #e5a74f;
+  font-size: 2rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+.hero .right_top h5 {
+  color: #e9eaec;
+  font-size: large;
+  margin-bottom: 0.8rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hero .right_top h5:hover {
+  color: #e5a74f;
+  cursor: pointer;
+}
+.hero .right_top p {
+  color: rgb(135, 132, 140);
+}
+.hero .bottom {
+  overflow: hidden;
+}
+.hero .bottom_content {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.hero .bottom_content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: center;
+     object-fit: center;
+  -o-object-position: center center;
+     object-position: center center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.hero .bottom_content .bottom_explain {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+.hero .bottom_content p {
+  margin: 0;
+}
+.hero .bottom_content h3 {
+  font-size: 2rem;
+  color: #dcdade;
+}
+.hero .bottom_content h4 {
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hero .bottom_content h4:hover {
+  color: #f15d51;
+}
+.hero .bottom_content p {
+  color: rgb(135, 132, 140);
+}
+.hero .bottom_explain {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  height: 100%;
+  margin-left: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .hero .desktop {
+    display: initial;
+  }
+  .hero .mobile {
+    display: none;
+  }
+  .hero .buttons {
+    margin-bottom: 0rem;
+  }
+  .hero .big_grid {
+    display: grid;
+    grid-template-areas: "img_left img_left right_top" "bright bright_content right_top" "bright bright_content right_top" "bottom_content1 bottom_content2 bottom_content3";
+    gap: 1.1rem;
+  }
+  .hero .bottom_content1 {
+    grid-area: bottom_content1;
+  }
+  .hero .bottom_content2 {
+    grid-area: bottom_content2;
+  }
+  .hero .bottom_content3 {
+    grid-area: bottom_content3;
+  }
+  .hero .img_left {
+    grid-area: img_left;
+    margin: 0;
+  }
+  .hero .img_left .desktop {
+    height: 220px;
+    line-height: 0.5rem;
+  }
+  .hero .right_top {
+    grid-area: right_top;
+    margin: 0;
+  }
+  .hero .bright {
+    font-size: 3rem;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    margin-bottom: 0;
+  }
+  .hero .bright_content {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .hero .bright_content p {
+    margin-top: -0.5rem;
+  }
+  .hero .bright {
+    margin-top: -0.7rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    font-weight: 700;
+    font-family: sans-serif;
+  }
+  .hero .left_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .left_content h1 {
+    font-size: 2.2rem;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
+  }
+  .hero .bottom {
+    grid-area: bottom;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero .bottom .bottom_content {
+    margin-bottom: 0;
+  }
+  .hero .bottom .bottom_content img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    height: 100%;
+  }
+  .hero .bottom .bottom_content .bottom_explain {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */
